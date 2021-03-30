@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h2{
+    color: hsl(208, 49%, 24%);
+}
+p{
+    font-size: 16px;
+    font-family: 'Ubuntu', serif;
+    font-weight: 400;
+}
+
+.menu{
+    background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-radius: 0 0 0 100px;
+    color: white;
+    padding-bottom: 100px;
+}
+.intro_img img{
+    width: 50px;
+}
+.logo_n_marker{
+    display:grid;
+    grid-template-columns: auto auto;
+    padding: 50px 25px;
+}
+.logo_n_marker .marker{
+    text-align: right;
+    background-color: inherit;
+}
+.div_nav_list{
+    display: none;
+    position: absolute;
+    left: 0;
+    border-style: solid;
+    background-color: grey;
+    width: 90vw;
+}
+.intro_description{
+    padding: 50px 10px 25px;
+    text-align: center;
+}
+.intro_description p{
+    padding: 20px 0;
+}
+.intro_description h1{
+    font-size: 28px;
+}
+.trial_n_learn_btns{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+.trial_n_learn_btns div{
+    padding: 5px;
+}
+.intro_btns{
+    width: 120px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 20px;
+}
+.start{
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+}
+.learn{
+    background-color: inherit;
+    color: white;
+}
+
+
+/*          Mid         */
+.mid{
+    text-align: center;
+}
+.mid_intro{
+    padding: 100px 0 50px 0;
+}
+
+.mid_2{
+    position: relative;
+    border: solid 1px;
+    height: 800px;
+}
+.mid_2 picture{
+    position: relative;
+    z-index: 1;
+    top: 50px;
+}
+.mobile_img{
+    width: 100%;
+}
+.mid_2 div{
+    position: absolute;
+    background-color: hsl(237, 23%, 32%);
+    padding: 200px 20px 100px 20px;
+    bottom: 0;
+    border-radius: 0 100px;
+}
+
+.mid_3{
+    border: solid 1px;
+    padding-bottom: 50px;
+}
+
+
+.mid_descriptions{
+    padding: 0 20px 10px;
+    line-height: 1.6;
+}
+
+
+
+/*              Footer          */
+.footer{
+    background-color: hsl(240, 10%, 16%);
+    text-align: center;
+    padding: 50px 0 100px;
+    color: white;
+    border-radius: 0 100px 0 0;
+}
+.footer div{
+    padding-top: 50px;
+}
+.footer ul{
+    padding-top: 20px;
+}
+.footer ul li{
+    padding: 5px;
+}
