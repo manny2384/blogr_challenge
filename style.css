@@ -30,6 +30,7 @@ p{
     border-radius: 0 0 0 100px;
     color: white;
     padding-bottom: 100px;
+    position: relative;
 }
 .intro_img img{
     width: 50px;
@@ -43,14 +44,62 @@ p{
     text-align: right;
     background-color: inherit;
 }
+
+/*          Pop UP Mobile Menu      */
 .div_nav_list{
     display: none;
     position: absolute;
     left: 0;
-    border-style: solid;
-    background-color: grey;
+    background-color: white;
+    color: hsl(237, 23%, 32%);
     width: 90vw;
+    bottom: 0;
+    left: 5vw;
+    text-align: center;
+    height: 400px;
+    border-radius: 5px;
 }
+.div_nav_list .main_item{
+    padding: 20px;
+}
+
+.mini_mark{
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 12px;
+}
+.sub_nav{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+}
+.sub_nav li{
+    padding: 5px;
+}
+.company:hover .sub_nav, .contact:hover .sub_nav, .product:hover .sub_nav{
+    max-height: 120px;
+    transition: max-height 0.25s ease-in;
+}
+.company:hover .mini_mark, .contact:hover .mini_mark, .product:hover .mini_mark{
+    transform: rotate(-90deg);
+}
+.login_btns li button{
+    width: 100px;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.signup{
+    background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: white;
+}
+.login{
+    background-color: inherit;
+    color: inherit;
+}
+/*          End of mobile menu      */
+
 .intro_description{
     padding: 50px 10px 25px;
     text-align: center;
@@ -84,7 +133,6 @@ p{
     color: white;
 }
 
-
 /*          Mid         */
 .mid{
     text-align: center;
@@ -95,7 +143,6 @@ p{
 
 .mid_2{
     position: relative;
-    border: solid 1px;
     height: 800px;
 }
 .mid_2 picture{
@@ -112,13 +159,11 @@ p{
     padding: 200px 20px 100px 20px;
     bottom: 0;
     border-radius: 0 100px;
+    color: white;
 }
-
 .mid_3{
-    border: solid 1px;
     padding-bottom: 50px;
 }
-
 
 .mid_descriptions{
     padding: 0 20px 10px;
@@ -144,3 +189,5 @@ p{
 .footer ul li{
     padding: 5px;
 }
+
+
